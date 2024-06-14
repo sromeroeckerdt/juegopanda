@@ -1,0 +1,1 @@
+alert('Hacé click hasta encontrar el panda para saber más sobre este hermoso oso, ¡Podes guiarte con las pistas que aparecen debajo del mapa 😊!');
