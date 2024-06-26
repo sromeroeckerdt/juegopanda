@@ -1,13 +1,15 @@
-
+// variable, usa biblioteca Math, para hacer uso de esta
 let getRandomNumber = size => {
     return Math.floor(Math.random() * size); 
 }
+// mide la distancia del evento 'click' a el punto donde debe clickearse, usa la logica de calculo de ángulo hipotenusa de un triangulo recto
 let getDistance = (e, target) => {
     let diffX = e.offsetX - target.x;
     let diffY = e.offsetY - target.y;
     return Math.sqrt((diffX * diffX) + (diffY * diffY));
 } 
-
+// dependiendo de la distancia del evento 'click', que por supuesto realiza el usuario, se devuelve un mensaje, en el caso de estar a una distancia menor de 20, cercana al punto, se envía el pop up de la biblioteca de SweetAlert, con imagen, texto, botón y tamaño modificado
+//se usa el alternativa condicional de if y el return, junto con el else if y su return
 let getDistanceHint = distance => {
     if (distance < 20){
         Swal.fire({
